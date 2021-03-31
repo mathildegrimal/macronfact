@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FactRandomController!{% endblock %}
+
+{% block body %}
+
+    <h1>Fact Aléatoire</h1>
+    <p>écrit par : {{fact.auteur}} le {{fact.date|date('d/m/Y')}}</p>
+    <p>{{fact.fact}}</p>
+
+{% endblock %}
